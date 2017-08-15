@@ -1,10 +1,11 @@
 # py-simple-db-utils
 Some python abstractions to make simple database operations easier.
 
-Example Usage:
+SimpleDictWriter Example Usage:
     writer = SimpleDictWriter(db)
     writer.write_dict("myTable", {'id':1234,'value':'mydata'}, commit=True)
 
+SimpleDictReader Example Usage:
     reader = SimpleDictReader(db)
     reader.read_dict("table_name")
 
