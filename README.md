@@ -1,7 +1,7 @@
 # py-simple-db-utils
 Some python abstractions to make simple database operations easier.
 
-Declair your db dictionary as follows:
+Declare your db dictionary as follows:
 ```
 {
     'DB_HOST': 'address',
