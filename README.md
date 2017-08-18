@@ -1,6 +1,17 @@
 # py-simple-db-utils
 Some python abstractions to make simple database operations easier.
 
+Declare your db dictionary as follows:
+```
+{
+    'DB_HOST': 'address',
+    'DB_PORT': 3306,
+    'DB': 'db',
+    'DB_USER: 'user',
+    'DB_PASS: 'pass'
+}
+```
+
 SimpleDictWriter Example Usage:
 ```python
     writer = SimpleDictWriter(db)
