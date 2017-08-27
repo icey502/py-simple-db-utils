@@ -117,6 +117,15 @@ class SimpleDictWriter(object):
                 commit = False
         self._out("done, wrote %d values" % count)
 
+    def run_sql(self, sql, commit=True):
+        """ Run sql on a table.  Be careful with this, because it is not checking for deletes, truncates, drops, etc! """
+        if sql:
+            conn = self._get_connection()
+            cursor = conn.cursor()
+            cursor.execute(sql)
+            if commit:
+                conn.commit()
+
 class SimpleDictReader(object):
     """ A convenience class for writing dicts to a database.
     Example usage:
